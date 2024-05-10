@@ -16,7 +16,7 @@ def canUnlockAll(boxes):
         key = keys.popleft()
         open.add(key)
 
-        for i in range(len(boxes[key])):
+        for i in boxes[key]:
             if i not in open:
                 keys.append(i)
 
